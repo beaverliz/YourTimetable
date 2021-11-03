@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name" translatable="false">YourTimetable</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="понедельник">monday</string>
+    <string name="вторник">tuesday</string>
+    <string name="среда">wednesday</string>
+    <string name="четверг">thursday</string>
+    <string name="пятница">friday</string>
+    <string name="суббота">saturday</string>
+    <string name="учебная_практика">educational practice</string>
+    <string name="веб_программирование">web programming</string>
+    <string name="информационные_сети">information networks</string>
+    <string name="анализ_решений">decision analysis</string>
+    <string name="мобилки">mobile application development technologies</string>
+    <string name="пис">information systems design</string>
+    <string name="нереляционные_бд">NoSQL</string>
+    <string name="смена_языка">You can change the language by clicking on the button below</string>
+    <string name="расписание">timetable</string>
+    <string name="настройки">settings</string>
+
+
+</resources>

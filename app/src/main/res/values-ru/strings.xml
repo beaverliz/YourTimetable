@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="понедельник">понедельник</string>
+    <string name="вторник">вторник</string>
+    <string name="среда">среда</string>
+    <string name="четверг">четверг</string>
+    <string name="пятница">пятница</string>
+    <string name="суббота">суббота</string>
+    <string name="учебная_практика">Учебная практика: научно-исследовательская работа</string>
+    <string name="веб_программирование">Веб-программирование</string>
+    <string name="информационные_сети">Информационные сети </string>
+    <string name="анализ_решений">Анализ решений</string>
+    <string name="мобилки">Технологии разработки мобильных приложений</string>
+    <string name="пис">Проектирование информационных систем</string>
+    <string name="нереляционные_бд">Нереляционные базы данных</string>
+    <string name="расписание">расписание</string>
+    <string name="настройки">настройки</string>
+    <string name="смена_языка">Вы можете поменять язык, нажав на кнопку ниже</string>
+</resources>
