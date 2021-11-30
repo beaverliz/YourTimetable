@@ -17,6 +17,48 @@
     <string name="смена_языка">You can change the language by clicking on the button below</string>
     <string name="расписание">timetable</string>
     <string name="настройки">settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string-array name="monday">
+        <item>@string/учебная_практика</item>
+        <item>@string/учебная_практика</item>
+        <item>@string/учебная_практика</item>
+        <item>@string/учебная_практика</item>
+    </string-array>
+
+    <string-array name="tuesday">
+        <item>@string/веб_программирование</item>
+        <item>@string/информационные_сети</item>
+        <item>@string/анализ_решений</item>
+    </string-array>
+
+    <string-array name="wednesday">
+        <item>@string/веб_программирование</item>
+        <item>@string/информационные_сети</item>
+        <item>@string/анализ_решений</item>
+    </string-array>
+
+    <string-array name="thursday">
+        <item>@string/мобилки</item>
+        <item>@string/пис</item>
+        <item>@string/учебная_практика</item>
+        <item>@string/учебная_практика</item>
+    </string-array>
+
+    <string-array name="friday">
+        <item>@string/веб_программирование</item>
+        <item>@string/пис</item>
+        <item>@string/учебная_практика</item>
+        <item>@string/учебная_практика</item>
+    </string-array>
+
+    <string-array name="saturday">
+        <item>@string/нереляционные_бд</item>
+        <item>@string/нереляционные_бд</item>
+        <item>@string/учебная_практика</item>
+        <item>@string/учебная_практика</item>
+    </string-array>
 
 
 </resources>

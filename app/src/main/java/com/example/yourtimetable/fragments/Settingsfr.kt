@@ -6,20 +6,22 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.yourtimetable.R
+import java.util.*
 
 
-class day : Fragment() {
-    private var name: String=""
+class Settingsfr : Fragment() {
+    private lateinit var settingsList: MutableList<Objects>
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
-        savedInstanceState: Bundle?,
+        savedInstanceState: Bundle?
     ): View? {
-        return super.onCreateView(inflater, container, savedInstanceState)
+        return inflater.inflate(R.layout.fragment_settingsfr, container, false)
     }
 
-    fun initFragment(dayName:String){
-        name= dayName
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
 
     }
 }

@@ -8,13 +8,610 @@
     tools:context=".TimetableForWeek">
 
 
-    <FrameLayout
-        android:id="@+id/fl_wrapper"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/nav"
+        android:fillViewport="true">
 
-        />
+        <TableLayout
+            android:layout_width="409dp"
+            android:layout_height="729dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <TableRow
+                android:id="@+id/Monday1"
+                android:layout_height="112dp"
+                android:width="100dp"
+                tools:layout_editor_absoluteX="-204dp"
+                tools:layout_editor_absoluteY="310dp"
+                android:onClick="onSelectDay">
+
+                <TextView
+                    android:id="@+id/Monday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:width="410dp"
+                    android:background="#7241CA"
+                    android:text="@string/понедельник"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:width="410dp"
+                    android:text="@string/учебная_практика"
+                    android:textAlignment="center"
+
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:height="5dp"
+                    android:background="#b8b8b8" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:width="410dp"
+                    android:text="@string/учебная_практика"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:height="5dp"
+                    android:background="#b8b8b8" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:width="410dp"
+                    android:text="@string/учебная_практика"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:height="5dp"
+                    android:background="#b8b8b8" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:width="410dp"
+                    android:text="@string/учебная_практика"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Tuesday2"
+                android:layout_height="112dp"
+                android:width="100dp"
+                tools:layout_editor_absoluteX="-204dp"
+                tools:layout_editor_absoluteY="310dp"
+                android:onClick="onSelectDay">
+
+                <TextView
+                    android:id="@+id/Tuesday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:width="410dp"
+                    android:background="#7241CA"
+                    android:text="@string/вторник"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:width="410dp"
+                    android:text="@string/веб_программирование"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:height="5dp"
+                    android:background="#b8b8b8" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:width="410dp"
+                    android:text="@string/информационные_сети"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:height="5dp"
+                    android:background="#b8b8b8" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:width="410dp"
+                    android:text="@string/анализ_решений"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:height="5dp"
+                    android:background="#b8b8b8" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Wednesday3"
+                android:layout_height="112dp"
+                android:width="100dp"
+                tools:layout_editor_absoluteX="-204dp"
+                tools:layout_editor_absoluteY="310dp"
+                android:onClick="onSelectDay">
+
+                <TextView
+                    android:id="@+id/Wednesday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:width="410dp"
+                    android:background="#7241CA"
+                    android:text="@string/среда"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:width="410dp"
+                    android:text="@string/веб_программирование"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:height="5dp"
+                    android:background="#b8b8b8" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:width="410dp"
+                    android:text="@string/информационные_сети"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:height="5dp"
+                    android:background="#b8b8b8" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:width="410dp"
+                    android:text="@string/анализ_решений"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Thursday4"
+                android:layout_height="112dp"
+                android:width="100dp"
+                tools:layout_editor_absoluteX="-204dp"
+                tools:layout_editor_absoluteY="310dp"
+                android:onClick="onSelectDay">
+
+                <TextView
+                    android:id="@+id/Thursday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:width="410dp"
+                    android:background="#7241CA"
+                    android:text="@string/четверг"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:width="410dp"
+                    android:text="@string/мобилки"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:height="5dp"
+                    android:background="#b8b8b8" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:width="410dp"
+                    android:text="@string/пис"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:height="5dp"
+                    android:background="#b8b8b8" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:width="410dp"
+                    android:text="@string/учебная_практика"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:height="5dp"
+                    android:background="#b8b8b8" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:width="410dp"
+                    android:text="@string/учебная_практика"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Friday5"
+                android:layout_height="112dp"
+                android:width="100dp"
+                tools:layout_editor_absoluteX="-204dp"
+                tools:layout_editor_absoluteY="310dp"
+                android:onClick="onSelectDay">
+
+                <TextView
+                    android:id="@+id/Friday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:width="410dp"
+                    android:background="#7241CA"
+                    android:text="@string/пятница"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:width="410dp"
+                    android:text="@string/веб_программирование"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:height="5dp"
+                    android:background="#b8b8b8" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:width="410dp"
+                    android:text="@string/пис"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:height="5dp"
+                    android:background="#b8b8b8" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:width="410dp"
+                    android:text="@string/учебная_практика"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:height="5dp"
+                    android:background="#b8b8b8" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:width="410dp"
+                    android:text="@string/учебная_практика"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Saturday6"
+                android:layout_height="112dp"
+                android:width="100dp"
+                tools:layout_editor_absoluteX="-204dp"
+                tools:layout_editor_absoluteY="310dp"
+                android:onClick="onSelectDay">
+
+                <TextView
+                    android:id="@+id/Saturday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:width="410dp"
+                    android:background="#7241CA"
+                    android:text="@string/суббота"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:width="410dp"
+                    android:text="@string/нереляционные_бд"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:height="5dp"
+                    android:background="#b8b8b8" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:width="410dp"
+                    android:text="@string/нереляционные_бд"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:height="5dp"
+                    android:background="#b8b8b8" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:width="410dp"
+                    android:text="@string/учебная_практика"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:height="5dp"
+                    android:background="#b8b8b8" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:width="410dp"
+                    android:text="@string/учебная_практика"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+    </ScrollView>
+
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav"

@@ -7,6 +7,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
+import androidx.fragment.app.Fragment
+import com.example.yourtimetable.fragments.Settingsfr
+import com.example.yourtimetable.fragments.Week
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import java.util.*
 
@@ -15,6 +18,8 @@ class Settings : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
         val bottomnav = findViewById<BottomNavigationView>(R.id.nav)
+        val settingsfrFragment = Settingsfr()
+        makeCurrentFragment(settingsfrFragment)
 
         bottomnav.setOnItemSelectedListener { item ->
             when(item.itemId){
@@ -53,6 +58,12 @@ class Settings : AppCompatActivity() {
             config.setLocale(locale)
             resources.updateConfiguration(config, resources.displayMetrics)
             this.recreate()
+        }
+    }
+    private fun makeCurrentFragment(fragment: Fragment){
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.fl_wrapper2, fragment)
+            commit()
         }
     }
     }

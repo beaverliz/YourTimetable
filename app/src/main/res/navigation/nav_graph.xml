@@ -1,5 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    >
-
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/first">
+    <fragment
+        android:id="@+id/week2"
+        android:name="com.example.yourtimetable.fragments.Week"
+        android:label="fragment_week"
+        tools:layout="@layout/fragment_week" >
+        <action
+            android:id="@+id/action_week2_to_settingsfr"
+            app:destination="@id/settingsfr" />
+        <action
+            android:id="@+id/action_week2_to_first"
+            app:destination="@id/first" />
+    </fragment>
+    <fragment
+        android:id="@+id/first"
+        android:name="com.example.yourtimetable.fragments.First"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_first_to_week2"
+            app:destination="@id/week2" />
+        <action
+            android:id="@+id/action_first_to_settingsfr"
+            app:destination="@id/settingsfr" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsfr"
+        android:name="com.example.yourtimetable.fragments.Settingsfr"
+        android:label="fragment_settingsfr"
+        tools:layout="@layout/fragment_settingsfr" >
+        <action
+            android:id="@+id/action_settingsfr_to_first"
+            app:destination="@id/first" />
+    </fragment>
 </navigation>

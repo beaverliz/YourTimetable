@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.First">
+
+
+    <Button
+        android:id="@+id/buttonsch"
+        android:layout_width="182dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="299dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/rounded_button"
+        android:elevation="6dp"
+        android:onClick="toTimetableForWeek"
+        android:text="@string/расписание"
+        android:translationZ="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonded"
+        android:layout_width="175dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="295dp"
+        android:background="@drawable/rounded_button"
+        android:elevation="6dp"
+        android:onClick="toSettings"
+        android:text="@string/настройки"
+        android:translationZ="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonsch"
+         />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
